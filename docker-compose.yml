@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  kartistmicroservice:
+    image: ${DOCKER_REGISTRY-}kartistmicroservice
+    build:
+      context: .
+      dockerfile: KArtistMicroservice\Dockerfile
